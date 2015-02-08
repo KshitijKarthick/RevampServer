@@ -1,0 +1,6 @@
+[technicalEvents]
+events={"events": [{"venue": "bangalore", "name": "Techtest", "time": "12:30"}, {"venue": "mangalore", "name": "query", "time": "1:30"}]}
+[culturalEvents]
+events={"events": [{"venue": "bangalore", "name": "Culttest", "time": "12:30"}, {"venue": "mangalore", "name": "query", "time": "1:30"}]}
+[sportsEvents]
+events={"events": [{"venue": "bangalore", "name": "Sportstest", "time": "12:30"}, {"venue": "mangalore", "name": "query", "time": "1:30"}]}
