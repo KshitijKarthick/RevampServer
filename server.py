@@ -55,15 +55,20 @@ class Server():
 
 if __name__ == '__main__':
 	''' Setting up the Server with Specified Configuration'''
+	'''
 	config = ConfigParser.RawConfigParser()
 	config.read('server.conf')
 	cherrypy.server.socket_host = config.get('server','host')
 	cherrypy.server.socket_port = int(config.get('server','port'))
-	cherrypy.server.socket_host = 'localhost'
+	cherrypy.server.socket_host = '127.0.0.1'
 	cherrypy.server.socket_port = 5000
+	'''
+
 	list = ConfigParser.RawConfigParser()
+	cherrypy.config.update({'server.socket_host': '0.0.0.0',})
+	cherrypy.config.update({'server.socket_port': int(os.environ.get('PORT', '5000')),})
 	list.read('events')
 	technical_event_list=json.loads(list.get('technicalEvents','events'))
 	cultural_event_list=json.loads(list.get('culturalEvents','events'))
 	sports_event_list=json.loads(list.get('sportsEvents','events'))
-cherrypy.quickstart(Server(),'/',[])
+cherrypy.quickstart(Server())
