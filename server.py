@@ -59,14 +59,11 @@ if __name__ == '__main__':
 	config.read('server.conf')
 	cherrypy.server.socket_host = config.get('server','host')
 	cherrypy.server.socket_port = int(config.get('server','port'))
-	conf = {
-		'/':{
-			'tools.staticdir.root': os.path.abspath(os.getcwd())
-		},
-	}
+	cherrypy.server.socket_host = 'localhost'
+	cherrypy.server.socket_port = 5000
 	list = ConfigParser.RawConfigParser()
 	list.read('events')
 	technical_event_list=json.loads(list.get('technicalEvents','events'))
 	cultural_event_list=json.loads(list.get('culturalEvents','events'))
 	sports_event_list=json.loads(list.get('sportsEvents','events'))
-cherrypy.quickstart(Server(),'/',conf)
+cherrypy.quickstart(Server(),'/',[])
