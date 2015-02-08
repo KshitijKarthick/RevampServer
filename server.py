@@ -17,15 +17,19 @@ class Server():
 		message="Success, Event List Obtained"
 		status_code=0;
 		events=[]
-		if choice.title() == "Technical":
-			events = technical_event_list['events']
-		elif choice.title() == "Cultural":
-			events = cultural_event_list['events']
-		elif choice.title() == "Sports":
-			events = sports_event_list['events']
-		else:
-			status_code=-1
-			message="Failed, No Such Event Type Enlisted"
+		try:
+			if choice.title() == "Technical":
+				events = technical_event_list['events']
+			elif choice.title() == "Cultural":
+				events = cultural_event_list['events']
+			elif choice.title() == "Sports":
+				events = sports_event_list['events']
+			else:
+				status_code=-1
+				message="Failed, No Such Event Type Enlisted"
+		except:
+				status_code=-1
+				message="Failed, Server Error! Error Occured while retreiving Event List"
 		return json.dumps({'status_code':status_code,'message':message,'events':events})
 
 	@cherrypy.expose
@@ -34,15 +38,19 @@ class Server():
 		message="Success, Event List Obtained"
 		status_code=0;
 		events=[]
-		if choice.title() == "Technical":
-			events = technical_event_list['events']
-		elif choice.title() == "Cultural":
-			events = cultural_event_list['events']
-		elif choice.title() == "Sports":
-			events = sports_event_list['events']
-		else:
-			status_code=-1
-			message="Failed, No Such Event Type Enlisted"
+		try:
+			if choice.title() == "Technical":
+				events = technical_event_list['events']
+			elif choice.title() == "Cultural":
+				events = cultural_event_list['events']
+			elif choice.title() == "Sports":
+				events = sports_event_list['events']
+			else:
+				status_code=-1
+				message="Failed, No Such Event Type Enlisted"
+		except:
+				status_code=-1
+				message="Failed, Server Error! Error Occured while retreiving Event List"
 		return json.dumps({'status_code':status_code,'message':message,'hash':json.dumps(events).__hash__()})
 
 if __name__ == '__main__':
