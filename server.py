@@ -45,6 +45,8 @@ class Server():
 				events = cultural_event_list['events']
 			elif choice.title() == "Sports":
 				events = sports_event_list['events']
+			elif choice.title() == "All":
+				events = technical_event_list['events'] + cultural_event_list['events'] + sports_event_list['events']
 			else:
 				status_code=-1
 				message="Failed, No Such Event Type Enlisted"
