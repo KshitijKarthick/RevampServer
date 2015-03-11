@@ -4,3 +4,7 @@ events={"events": [{"venue": "bangalore", "name": "Techtest", "time": "12:30", "
 events={"events": [{"venue": "bangalore", "name": "Culttest", "time": "12:30", "registeration_fee": "2300", "description": "Cultural Bleh?", "prize_money": "2300"}, {"venue": "mangalore", "name": "query", "time": "1:30", "registeration_fee": "2300", "description": "Cultural Bleh?", "prize_money": "2300"}]}
 [sportsEvents]
 events={"events": [{"venue": "bangalore", "name": "Sportstest", "time": "12:30", "registeration_fee": "2300", "description": "Sports Bleh?", "prize_money": "2300"}, {"venue": "mangalore", "name": "query", "time": "1:30", "registeration_fee": "2300", "description": "Sports Bleh?", "prize_money": "2300"}]}
+[managementEvents]
+events={"events": [{"venue": "bangalore", "name": "Sportstest", "time": "12:30", "registeration_fee": "2300", "description": "Sports Bleh?", "prize_money": "2300"}, {"venue": "mangalore", "name": "query", "time": "1:30", "registeration_fee": "2300", "description": "Sports Bleh?", "prize_money": "2300"}]}
+[funEvents]
+events={"events": [{"venue": "bangalore", "name": "Sportstest", "time": "12:30", "registeration_fee": "2300", "description": "Sports Bleh?", "prize_money": "2300"}, {"venue": "mangalore", "name": "query", "time": "1:30", "registeration_fee": "2300", "description": "Sports Bleh?", "prize_money": "2300"}]}

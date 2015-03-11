@@ -24,6 +24,10 @@ class Server():
 				events = cultural_event_list['events']
 			elif choice.title() == "Sports":
 				events = sports_event_list['events']
+			elif choice.title() == "Management":
+				events = management_event_list['events']
+			elif choice.title() == "Fun":
+				events = fun_event_list['events']
 			else:
 				status_code=-1
 				message="Failed, No Such Event Type Enlisted"
@@ -43,10 +47,14 @@ class Server():
 				events = technical_event_list['events']
 			elif choice.title() == "Cultural":
 				events = cultural_event_list['events']
-			elif choice.title() == "Sports":
-				events = sports_event_list['events']
+			elif choice.title() == "Management":
+				events = management_event_list['events']
+			elif choice.title() == "Fun":
+				events = fun_event_list['events']
+			elif choice.title() == "Technical":
+				events = technical_event_list['events']
 			elif choice.title() == "All":
-				events = technical_event_list['events'] + cultural_event_list['events'] + sports_event_list['events']
+				events = technical_event_list['events'] + cultural_event_list['events'] + sports_event_list['events'] + fun_event_list['events'] + management_event_list['events']
 			else:
 				status_code=-1
 				message="Failed, No Such Event Type Enlisted"
@@ -73,4 +81,7 @@ if __name__ == '__main__':
 	technical_event_list=json.loads(list.get('technicalEvents','events'))
 	cultural_event_list=json.loads(list.get('culturalEvents','events'))
 	sports_event_list=json.loads(list.get('sportsEvents','events'))
+	management_event_list=json.loads(list.get('managementEvents','events'))
+	fun_event_list=json.loads(list.get('funEvents','events'))
+
 cherrypy.quickstart(Server())
