@@ -1,0 +1,373 @@
+{
+    "events": [
+        {
+            "event": "Paper Presentation(Department of M.C.A & B.C.A, M.Sc & B.Sc(Comp Sci))",
+            "fee": "Rs.200",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.3000",
+            "prize2": "Worth Rs.2000",
+            "descr": "\nBefore selection\nEach team may comprise a maximum of 3 members.\nThe work of the authors must be branch related work/technology.\nThe papers must strictly adhere to the standard IEEE format.\nThe authors must mail their papers to revamp@revainstitution.org on or before 18th of March, 2015 (Please mention subject as 'Tech-PPT' their branch and semester).\nPost selection\nAuthors of the selected papers will be intimated through e-mail.\nAuthors should prepare an apt power point presentation and present it at REVA ITM on the day of the event.\nEach team is allotted a time frame of 8 minutes for presentation and 2 minutes for questionnaire by judges and audience.\nAuthors of the selected papers need to register on the day of the event before presentation."
+        },
+        {
+            "event": "Project Demo",
+            "fee": "Rs.200",
+            "venue": "Coming soon",
+            "date": "Conimg soon",
+            "prize1": "worth Rs.3000",
+            "prize2": "Worth Rs.2000",
+            "descr": "\n Before selection\n  Each team may comprise a maximum of 4 members.\n  The project must use at least one branch related technology (only literature survey and/or analysis projects are not eligible).\n  The design and construction of the projects must be own and not be a modification of commercially available projects.\n  The synopsis of the project must be mailed in prior and only selected teams will be invited for the demo on the day of the event.\n  The synopsis may contain a maximum of 4 pages including abstract, block/circuit diagrams, flowcharts, methodology, hardware and software used.\n  The teams must mail their synopsis to revamp@revainstitution.org on or before 18th of March 2015 (Please mention subject as 'Tech-PD', branch and semester).Post selection\n  Selected teams will be intimated through e-mail.\n  The teams must register on the day of the event before the demo.\n  The selected projects will be divided into 2 categories namely hardware and software and will be judged separately.\n Only basic components like computers, oscilloscopes, etc., will be provided and any such basic requirements must be intimated to us well in advance.\n  Any project specific tools and components must be carried by the team on the day of the event.\n  The teams may demonstrate their projects and may also make use of power point presentations if necessary.\n  The time frame allotted to each team is 15 minutes for the demonstration and 5 minutes for interaction with the judges.\n  Teams may bring their own laptops with required software installed."
+        },
+        {
+            "event": "Code Debugging",
+            "fee": "Rs.100",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "worth Rs.1500",
+            "prize2": "Worth Rs.1000",
+            "descr": "\n  Only students from BCA or B.Sc (comp sci) can participate and individual participation.\n  The Participants will be provided very Basic C programming examples with Syntactical errors and/or Logical errors and they must identify, rectify and execute the Code"
+        },
+        {
+            "event": "Web Design",
+            "fee": "Rs.100",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.1500",
+            "prize2": "Worth Rs.1000",
+            "descr": "\n  Two Participants per team are allowed.\n  In the first round a webpage will be displayed to the participants which must be built by the participants in stipulated time\n  In the final round teams must design their own innovative website of any kind"
+        },
+        {
+            "event": "Innovative Ideas",
+            "fee": "Rs.100",
+            "venue": "Coming soon",
+            "date": "Coming soon    ",
+            "prize1": "Worth Rs.2500",
+            "prize2": "Worth Rs.2000",
+            "descr": "\n  Maximum of two participants are allowed per team.\n  Each participant will be given a time frame of 5 minutes for presentation of his/her idea and 2 minutes to address queries by judges.\n  The idea should be technically relevant and creative and also should have good marketing strategy.\n Power point presentation can be used for effective communication."
+        },
+        {
+            "event": "Technical Quiz(computer science stream)",
+            "fee": "Rs.150",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.2000",
+            "prize2": "Worth Rs.1500",
+            "descr": "\n  Each team may comprise a maximum of 3 members.\n  There will be two rounds\n  Preliminary round which is written Test (Elimination Round) 20 objective questions 10 mins\n  Qualified students will get entry to the final round.\n  All the members must be from the same Institution."
+        },
+        {
+            "event": "On Spot Programming",
+            "fee": "Rs.100",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.2000",
+            "prize2": "Worth Rs.1500",
+            "descr": "\n  Each team may comprise a maximum of 2 members.\n  Platforms C and C++\n  Only the students from BCA, B.Sc (CS) and MCA 1st year, M.Sc (CS) 1st year are allowed to take part.\n  Consists of two rounds \n  Round-1: Written Test (which will check your programming aptitude). This is for 20 mins.\n  Round-2: The short listed candidates will compete in the final round where they will have   to execute programs provided on spot. (40mins + 5mins for output demonstration)."
+        },
+        {
+            "event": "Poster Designing",
+            "fee": "Rs.200",
+            "venue": "Coming Soon",
+            "date": "Coming Soon",
+            "prize1": "Worth Rs.3000",
+            "prize2": "worth Rs.2000",
+            "descr": "\nIndividual participation.\nCorelDraw and Adobe Photoshop platforms will be provided for the candidates.\nEach poster should include a topic/title across the top and the font size should be at least 18px to be seen easily.\nThe text information should be in at least 16px.\nCandidates will be given 45mins to finish up their designs.\nThe Resolution of the overall poster should be at least 1280x720 pixels.\nInternet, Pen drives and External HDD cannot be used.\nThe poster must NOT be a commercial/product sales poster.\nThe judgment of the Conference Co-Chairs will be final.\nAny poster that is deemed to be a commercial advertisement will be removed from the Conference as unacceptable."
+        },
+        {
+            "event": "Paper Presentation(Department of Life Science (M.Sc/B.Sc))",
+            "fee": "Rs.200",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.3000",
+            "prize2": "Worth Rs.2000",
+            "descr": "\nBefore Selection\n  Each team may comprise a maximum of 3 members.\n  The work of the authors must be branch related work/technology.\n  The papers must strictly adhere to the standard IEEE format.\n  The authors must mail their papers to revamp@revainstitution.org on or before 18th of March, 2015 (Please mention subject as \u201cTech-PPT\u201d their branch and semester).\n Post selection\n  Authors of the selected papers will be intimated through e-mail.\n  Authors should prepare an apt power point presentation and present it at REVA ITM on the day of the event.\n  Each team is allotted a time frame of 8 minutes for presentation and 2 minutes for questionnaire by judges and audience.\n  Authors of the selected papers need to register on the day of the event before presentation.\n Each team gets a copy of their REVA journal, where their papers are published and soft copy of the proceedings."
+        },
+        {
+            "event": "Project Demo",
+            "fee": "Rs.",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.3000",
+            "prize2": "Worth Rs.2000",
+            "descr": "\n Before selection\n Each team may comprise a maximum of 4 members.\n  The project must use at least one branch related technology (only literature survey and/or analysis projects are not eligible).\n  The design and construction of the projects must be own and not be a modification of commercially available projects.\n  The synopsis of the project must be mailed in prior and only selected teams will be invited for the demo on the day of the event.\n  The synopsis may contain a maximum of 4 pages including abstract, block/circuit diagrams, flowcharts, methodology, hardware and software used.\n The teams must mail their synopsis to revamp@revainstitution.org on or before 18th of March 2015 (Please mention subject as 'Tech-PD', branch and semester).\nPost selection\n  Selected teams will be intimated through e-mail.\n  The teams must register on the day of the event before the demo.\n  The selected projects will be divided into 2 categories namely hardware and software and will be judged separately.\n  Only basic components like computers, oscilloscopes, etc., will be provided and any such basic requirements must be intimated to us well in advance.\n  Any project specific tools and components must be carried by the team on the day of the event.\n  The teams may demonstrate their projects and may also make use of power point presentations if necessary.\n  The time frame allotted to each team is 15 minutes for the demonstration and 5 minutes for interaction with the judges.\n  Teams may bring their own laptops with required software installed."
+        },
+        {
+            "event": "Bio-Dumb Charades",
+            "fee": "Rs.100",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.1500",
+            "prize2": "Worth Rs.1000",
+            "descr": "\n Competition open to all life Science Students\n  2 participants per team\n  Disqualification of the participants who disobey the rules.\n  No Drawing or Imitating Direct Letter for guessing words\n  Actor cannot point out at any object or person in the scene or audience\n  No Verbal Help allowed.\n  2 mins will be maximum time allotted per word."
+        },
+        {
+            "event": "Click and Cap It",
+            "fee": "Rs.100",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.1500",
+            "prize2": "Worth Rs.1000",
+            "descr": "\n  2 participants per team\n  Competition is open to all Life Science students only\n  Participants should have their own camera.\n  Each team will have to submit 5-10 photos along with caption which will be based on the theme based on life science given on the event day.\n  Participants will have to frame a story line from the clicked photos based on the theme and present for 2 mins.\n  Entries should be given in JPEG format\n  Digital manipulation that distort the reality of the photo will not be allowed\n  The organizer reserve the rights to reject entries with incomplete details\n  Images that have been used for commercial purpose, Pre-clicked, Published will not be eligible."
+        },
+        {
+            "event": "Chemsketch",
+            "fee": "Rs.100",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.1500",
+            "prize2": "Worth Rs.1000",
+            "descr": "\n  1 participant per team\n  Participant will be provided with the system and the Chemsketch software\n  Participant will have to draw the structure of the chemical compounds and name them.\n  No means of copying allowed, if seen the participant will be disqualified.\n  No mobiles are allowed."
+        },
+        {
+            "event": "Paper Presentation(Department of Mechanical Engineering RITM)",
+            "fee": "Rs.200",
+            "venue": "Coming Soon",
+            "date": "Coming Soon",
+            "prize1": "Worth Rs.3000",
+            "prize2": "Worth Rs.2000",
+            "descr": "\nBefore Selection \nEach team may comprise a maximum of 3 members.\nThe work of the authors must be branch related work/technology.\nThe papers must strictly adhere to the standard IEEE format.\nThe authors must mail their papers to revamp@revainstitution.org on or before 18th of March, 2015 (Please mention subject as 'Tech-PPT' their branch and semester).\nPost selection\n Authors of the selected papers will be intimated through e-mail.\nAuthors should prepare an apt power point presentation and present it at REVA ITM on the day of the event.\nEach team is allotted a time frame of 8 minutes for presentation and 2 minutes for questionnaire by judges and audience.\n  Authors of the selected papers need to register on the day of the event before presentation.\n  Each team gets a copy of their REVA journal, where their papers are published and soft copy of the proceedings."
+        },
+        {
+            "event": "3D Modelling",
+            "fee": "Rs.80",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.2000",
+            "prize2": "Worth Rs.1500",
+            "descr": "\n  Individual participation.\n The tools provided for modeling are solid edge v19.\n  Participants need to perform the 3D modeling for the given orthographic views.\n  The duration of the event will be 60 minutes."
+        },
+        {
+            "event": "Lathe Modelling",
+            "fee": "Rs.80",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.2000",
+            "prize2": "Worth Rs.1500",
+            "descr": "\nIndividual Participation.\nSketch will be given on the spot.\nRequired tools will be provided.\nJudgment will be based on accuracy and precision.\nEvent Duration: 2 hrs."
+        },
+        {
+            "event": "Paper Presentation(Department of Civil Engineering RITM)",
+            "fee": "Rs.200",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.3000",
+            "prize2": "Worth Rs.2000",
+            "descr": "\nBefore selection\n  Each team may comprise a maximum of 3 members.\n  The work of the authors must be branch related work/technology.\n  The papers must strictly adhere to the standard IEEE format.\n  The authors must mail their papers to revamp@revainstitution.org on or before 18th of March, 2015 (Please mention subject as 'Tech-PPT' their branch and semester).\nPost selection\n  Authors of the selected papers will be intimated through e-mail.\n  Authors should prepare an apt power point presentation and present it at REVA ITM on the day of the event.\n  Each team is allotted a time frame of 8 minutes for presentation and 2 minutes for questionnaire by judges and audience.\n  Authors of the selected papers need to register on the day of the event before presentation.\n Each team gets a copy of their REVA journal, where their papers are published and soft copy of the proceedings."
+        },
+        {
+            "event": "Project Demo",
+            "fee": "Rs.200",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.3000",
+            "prize2": "Worth Rs.2000",
+            "descr": "\nBefore selection\n  Each team may comprise a maximum of 4 members.\n  The project must use at least one branch related technology (only literature survey and/or analysis projects are not eligible).\n  Before selection\n  Each team may comprise a maximum of 4 members.\n  The project must use at least one branch related technology (only literature survey and/or analysis projects are not eligible).\n  The teams must register on the day of the event before the demo.\n  The selected projects will be divided into 2 categories namely hardware and software and will be judged separately.\n  Only basic components like computers, oscilloscopes, etc., will be provided and any such basic requirements must be intimated to us well in advance.\n  Any project specific tools and components must be carried by the team on the day of the event.\n  The teams may demonstrate their projects and may also make use of power point presentations if necessary.\n  The time frame allotted to each team is 15 minutes for the demonstration and 5 minutes for interaction with the judges.\n  Teams may bring their own laptops with required software installed."
+        },
+        {
+            "event": "Model Making",
+            "fee": "Rs.100",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.3000",
+            "prize2": "Worth Rs.2000",
+            "descr": "\n  Each team comprises of maximum 3 students.\n  Time framed for each team is 1hr 30min.\n  Models related to \n  Environmental Pollution and Control\n  Buildings\n  Bridges\n  Rain Water Harvesting\n  Basic stationary will be provided.\n  All the materials should be borne by students."
+        },
+        {
+            "event": "Quick Surveying",
+            "fee": "Rs.100",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.2000",
+            "prize2": "Worth Rs.1500",
+            "descr": "\n  Each team comprises of maximum 4 students.\n  Basic required tools will be provided.\n  Judgment will be based on accuracy and precision.\n  Duration of the event will be announced during registration."
+        },
+        {
+            "event": "Brain to Gain - Technical Treasure Hunt ( Civil)",
+            "fee": "Rs.100",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.2000",
+            "prize2": "worth Rs.1500",
+            "descr": "\n  Each team comprises of maximum 3 students.\n  Basic preparation of fundamentals of Civil Engineering and Laboratory experiments is advised.\n  Use of calculator is allowed."
+        },
+        {
+            "event": "Paper Presentation(Department of Electrical and Electronics Engineering RITM)",
+            "fee": "Rs.200",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.3000",
+            "prize2": "Worth Rs.2000",
+            "descr": "\nBefore selection\n  Each team may comprise a maximum of 3 members.\n  The work of the authors must be branch related work/technology.\n  The papers must strictly adhere to the standard IEEE format.\n  The authors must mail their papers to revamp@revainstitution.org on or before 18th of March, 2015 (Please mention subject as 'Tech-PPT' their branch and semester).\nPost selection\n  Authors of the selected papers will be intimated through e-mail.\n  Authors should prepare an apt power point presentation and present it at REVA ITM on the day of the event.\n  Each team is allotted a time frame of 8 minutes for presentation and 2 minutes for questionnaire by judges and audience.\n  Authors of the selected papers need to register on the day of the event before presentation.\n  Each team gets a copy of their REVA journal, where their papers are published and soft copy of the proceedings."
+        },
+        {
+            "event": "Project Demo",
+            "fee": "Rs.200",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.3000",
+            "prize2": "Worth Rs.2000",
+            "descr": "\nBefore selection\n  Each team may comprise a maximum of 4 members.\n  The project must use at least one branch related technology (only literature survey and/or analysis projects are not eligible).\n  The design and construction of the projects must be own and not be a modification of commercially available projects.\n  The synopsis of the project must be mailed in prior and only selected teams will be invited for the demo on the day of the event.\n  The synopsis may contain a maximum of 4 pages including abstract, block/circuit diagrams, flowcharts, methodology, hardware and software used.\n  The teams must mail their synopsis to revamp@revainstitution.org on or before 18th of March 2015 (Please mention subject as 'Tech-PD', branch and semester).\nPost selection\n  Selected teams will be intimated through e-mail.\n  The teams must register on the day of the event before the demo.\n  The selected projects will be divided into 2 categories namely hardware and software and will be judged separately.\n  Only basic components like computers, oscilloscopes, etc., will be provided and any such basic requirements must be intimated to us well in advance.\n  Any project specific tools and components must be carried by the team on the day of the event.\n  The teams may demonstrate their projects and may also make use of power point presentations if necessary.\n  The time frame allotted to each team is 15 minutes for the demonstration and 5 minutes for interaction with the judges.\n Teams may bring their own laptops with required software installed."
+        },
+        {
+            "event": "Microcontroller Programming",
+            "fee": "Rs.60",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.1500",
+            "prize2": "Worth Rs.1000",
+            "descr": "\n  Prelims\n* Max 2 members are allowed per team.\n* Consists of MCQ s for 20 min Duration\n* Based on the Results, maximum 12 teams will be selected based on the test scores\n Second round\n* The second the teams will be given a problem statement.\n * Each team will have to write a program for the given statement and the simulation outputs have to be shown to the judges.\n* Both Assembly and C is allowed"
+        },
+        {
+            "event": "Logic Design",
+            "fee": "Rs.60",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.1000",
+            "prize2": "Worth Rs.750",
+            "descr": "\nPrelims\n* 2 members per team.\n* Consists of MCQ's for 20 min duration\n* Top 10 will be selected for the second round\nSecond Round\n* Specifications for the Logic circuits to be built will be specified.\n* Participants will have to design the circuit within the specific time limit\n* Equipment\u2019s will be provided. Datasheets if necessary will be provided."
+        },
+        {
+            "event": "Paper Presentation(Department of Electronics and Communications RITM)",
+            "fee": "Rs.200",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.3000",
+            "prize2": "Worth Rs.2000",
+            "descr": "\n  Before selection\n  Each team may comprise a maximum of 3 members.\n  The work of the authors must be branch related work/technology.\n  The papers must strictly adhere to the standard IEEE format.\n  The authors must mail their papers to revamp@revainstitution.org on or before 18th of March, 2015 (Please mention subject as 'Tech-PPT' their branch and semester).\nPost selection\n  Authors of the selected papers will be intimated through e-mail.\n  Authors should prepare an apt power point presentation and present it at REVA ITM on the day of the event.\n  Each team is allotted a time frame of 8 minutes for presentation and 2 minutes for questionnaire by judges and audience.\n  Authors of the selected papers need to register on the day of the event before presentation.\n  Each team gets a copy of their REVA journal, where their papers are published and soft copy of the proceedings."
+        },
+        {
+            "event": "Project Demo",
+            "fee": "Rs.200",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.3000",
+            "prize2": "Worth Rs.2000",
+            "descr": "\nBefore selection\n  Each team may comprise a maximum of 4 members.\n  The project must use at least one branch related technology (only literature survey and/or analysis projects are not eligible).\n  The design and construction of the projects must be own and not be a modification of commercially available projects.\n  The synopsis of the project must be mailed in prior and only selected teams will be invited for the demo on the day of the event.\n  The synopsis may contain a maximum of 4 pages including abstract, block/circuit diagrams, flowcharts, methodology, hardware and software used.\n  The teams must mail their synopsis to revamp@revainstitution.org on or before 18th of March 2015 (Please mention subject as 'Tech-PD', branch and semester).\nPost selection\n  Selected teams will be intimated through e-mail.\n  The teams must register on the day of the event before the demo.\n  The selected projects will be divided into 2 categories namely hardware and software and will be judged separately.\n  Only basic components like computers, oscilloscopes, etc., will be provided and any such basic requirements must be intimated to us well in advance.\n  Any project specific tools and components must be carried by the team on the day of the event.\n  The teams may demonstrate their projects and may also make use of power point presentations if necessary.\n  The time frame allotted to each team is 15 minutes for the demonstration and 5 minutes for interaction with the judges.\n  Teams may bring their own laptops with required software installed."
+        },
+        {
+            "event": "Robotic Racing",
+            "fee": "Rs.200",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.2500",
+            "prize2": "Worth Rs.1500",
+            "descr": "\n  Max 4 members per team.\n  Any no of team per college.\n  Racing area will be provided\n  The length of the track is 50mtrs.\n  Robots can be built prior to the competition"
+        },
+        {
+            "event": "HDL Programming",
+            "fee": "Rs.100",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.1500",
+            "prize2": "Worth Rs.1000",
+            "descr": "\nPrelims\n* Max 2 members are allowed per team.\n* Consists of MCQ s for 20 min Duration\n* Based on the Results, maximum 12 teams will be selected based on the test scores\nSecond round\n* Teams will be given a problem statement.\n* Each team will have to write a program for the given statement and the simulation outputs have to be shown to the judges.\n* Both VHDL and Verilog are allowed."
+        },
+        {
+            "event": "Circuit Debugging",
+            "fee": "Rs.100",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.2000",
+            "prize2": "Worth Rs.1500",
+            "descr": "\nPrelims\n* Max 2 members are allowed per team.\n* Consists of MCQ s for 20 min Duration\n* Based on the Results, maximum 12 teams will be selected based on the test scores\nSecond round\n* The Circuits will be given to the team to debug.\n* Teams will have to identify the errors in the circuits\n* Rectify and build the circuits."
+        },
+        {
+            "event": "Paper Presentation(Department of Computer/ Information Science RITM)",
+            "fee": "Rs.200",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.3000",
+            "prize2": "Worth Rs.2000",
+            "descr": "\nBefore selection\n  Each team may comprise a maximum of 3 members.\n  The work of the authors must be branch related work/technology.\n  The papers must strictly adhere to the standard IEEE format.\n  The authors must mail their papers to revamp@revainstitution.org on or before 18th of March, 2015 (Please mention subject as 'Tech-PPT' their branch and semester).\nPost selection\n  Authors of the selected papers will be intimated through e-mail.\n  Authors should prepare an apt power point presentation and present it at REVA ITM on the day of the event.\n  Each team is allotted a time frame of 8 minutes for presentation and 2 minutes for questionnaire by judges and audience.\n  Authors of the selected papers need to register on the day of the event before presentation.\n  Each team gets a copy of their REVA journal, where their papers are published and soft copy of the proceedings."
+        },
+        {
+            "event": "Project Demo",
+            "fee": "Rs.200",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.3000",
+            "prize2": "Worth Rs.2000",
+            "descr": "\nBefore selection\n  Each team may comprise a maximum of 4 members.\n  The project must use at least one branch related technology (only literature survey and/or analysis projects are not eligible).\n  The design and construction of the projects must be own and not be a modification of commercially available projects.\n  The synopsis of the project must be mailed in prior and only selected teams will be invited for the demo on the day of the event.\n  The synopsis may contain a maximum of 4 pages including abstract, block/circuit diagrams, flowcharts, methodology, hardware and software used.\n  The teams must mail their synopsis to revamp@revainstitution.org on or before 18th of March 2015 (Please mention subject as 'Tech-PD', branch and semester).\nPost selection\n  Selected teams will be intimated through e-mail.\n  The teams must register on the day of the event before the demo.\n  The selected projects will be divided into 2 categories namely hardware and software and will be judged separately.\n  Only basic components like computers, oscilloscopes, etc., will be provided and any such basic requirements must be intimated to us well in advance.\n  Any project specific tools and components must be carried by the team on the day of the event.\n  The teams may demonstrate their projects and may also make use of power point presentations if necessary.\n  The time frame allotted to each team is 15 minutes for the demonstration and 5 minutes for interaction with the judges.\n  Teams may bring their own laptops with required software installed."
+        },
+        {
+            "event": "Code-a-thon",
+            "fee": "Rs.100",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.2000",
+            "prize2": "Worth Rs.1500",
+            "descr": "\n  Each team may comprise a maximum of 2 members.\n  Event will be conducted in various rounds.\n  In each round specific programming skills will be tested.\n  Each round will consist of coding challenges which the participants will have to overcome to move ahead to subsequent rounds. Failing to do so, will result in elimination.\n  First Round is a written MCQ technical round\n  The subsequent rounds will be informed to you as you progress.\n  The number of teams to advance to finals would be selected by the judges.\n  Be efficient in your coding."
+        },
+        {
+            "event": "AMA(Android Mobile App Developement)",
+            "fee": "Rs.200",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.3000",
+            "prize2": "Worth Rs.2000",
+            "descr": "NOTE : Topics will be out very soon and notified reg fee\n  Each team may comprise a maximum of 3 members.\n  Each participating team can choose any one of the provided topics only and submit the abstract of the proposed application.\n  Abstracts from the topics other than the given above topics will be rejected.\n  The participating team needs to be innovative and consider all aspects of pros and cons of their application.\n  Participating teams must develop the application for android based phones and a working project needs to be demonstrated."
+        },
+        {
+            "event": "Innovative Ideas(UG)",
+            "fee": "Rs.100",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.2000",
+            "prize2": "Worth Rs.1500",
+            "descr": "\n  Individual participation.\n  Each participant will be given a time frame of 5 minutes for presentation of his/her idea and 2 minutes to address queries by judges.\n  The idea should be technically relevant and creative and also should have good marketing strategy.\n  Power point presentation can be used for effective communication."
+        },
+        {
+            "event": "Techliens(Department of Basic Science)",
+            "fee": "Rs.150",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.1500",
+            "prize2": "Worth Rs.1000",
+            "descr": "The event consists of three rounds-\n>SPELL BEE\n>TECH CHARADES\n>TECHNICAL CROSSWORD\n\nRules:\n   No of participants- 2 in a team. (1st Year)\n(Note: The participants should belong to the same institution irrespective of any branch.)\n>SPELL BEE:\n- Each team would be given 30 seconds to spell the given word correctly.\n(Note: One person in a team would spell the word.)\n>TECH CHARADES:\n- The qualifiers of the first round will be eligible to play this round. Each team would be given a technical topic where one member of the team would enact the given topic and the other would guess.\n- The teams would be judged on the time factor of 60 seconds.\n>CROSSWORD:\n- The qualifying teams would compete for the final round.\n- Crossword sheet would be provided to the finalists.\n- The team which solves it first will be the WINNERS."
+        },
+        {
+            "event": "Project demo",
+            "fee": "Rs.100",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.3000",
+            "prize2": "Worth Rs.2000",
+            "descr": "\nBefore selection\n  Each team may comprise a maximum of 4 members.\n  The project must use at least one branch related technology (only literature survey and/or analysis projects are not eligible).\n  The design and construction of the projects must be own and not be a modification of commercially available projects.\n  The synopsis of the project must be mailed in prior and only selected teams will be invited for the demo on the day of the event.\n  The synopsis may contain a maximum of 4 pages including abstract, block/circuit diagrams, flowcharts, methodology, hardware and software used.\n  The teams must mail their synopsis to revamp@revainstitution.org on or before 18th of March 2015 (Please mention subject as 'Tech-PD', branch and semester).\nPost selection\n  Selected teams will be intimated through e-mail.\n  The teams must register on the day of the event before the demo.\n  The selected projects will be divided into 2 categories namely hardware and software and will be judged separately.\n  Only basic components like computers, oscilloscopes, etc., will be provided and any such basic requirements must be intimated to us well in advance.\n  Any project specific tools and components must be carried by the team on the day of the event.\n  The teams may demonstrate their projects and may also make use of power point presentations if necessary.\n  The time frame allotted to each team is 15 minutes for the demonstration and 5 minutes for interaction with the judges.\n  Teams may bring their own laptops with required software installed."
+        },
+        {
+            "event": "Look and Speek",
+            "fee": "Rs.50",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.1500",
+            "prize2": "Worth Rs.1000",
+            "descr": "Description- Improves one\u2019s imaginary skills on technological description.\nRules:\n  Individual Event open to all.\n  The participants would be shown a technical picture based on lottery system.\n  The picture corresponding to the number would be displayed on the screen.\n  Time limit- 90+30 seconds.\n  The participants have to describe the displayed picture with creative ideas."
+        },
+        {
+            "event": "Paper Presentation(department of Basic Science)",
+            "fee": "Rs.200",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.3000",
+            "prize2": "Worth Rs.2000",
+            "descr": "\nBefore selection\n Each team may comprise a maximum of 3 members.\n  The work of the authors must be branch related work/technology.\n  The papers must strictly adhere to the standard IEEE format.\n  The authors must mail their papers to revamp@revainstitution.org on or before 18th of March, 2015 (Please mention subject as 'Tech-PPT' their branch and semester).\nPost selection\n  Authors of the selected papers will be intimated through e-mail.\n  Authors should prepare an apt power point presentation and present it at REVA ITM on the day of the event.\n  Each team is allotted a time frame of 8 minutes for presentation and 2 minutes for questionnaire by judges and audience.\n  Authors of the selected papers need to register on the day of the event before presentation.\n  Each team gets a copy of their REVA journal, where their papers are published and soft copy of the proceedings."
+        },
+        {
+            "event": "Model Making",
+            "fee": "Rs.100",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.2000",
+            "prize2": "Worth Rs.1500",
+            "descr": ""
+        },
+        {
+            "event": "General Quiz(only 1st year B.E/B.Tech)",
+            "fee": "Rs.150",
+            "venue": "Coming soon",
+            "date": "Coming soon",
+            "prize1": "Worth Rs.1500",
+            "prize2": "Worth Rs.1000",
+            "descr": "\n  Each team comprises of 2 members.\n  Topics are purely technical.\n  5 rounds are involved in this event.\n  Round 1: Written Round\n  Round 2: Crossword\n  Round 3: Spell Bee\n  Round 4: Picture-It\n  Round 5: Technical Dumb-charades\n  Elimination is involved in each round."
+        }
+    ]
+}
