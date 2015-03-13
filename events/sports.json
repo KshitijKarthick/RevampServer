@@ -2,7 +2,7 @@
     "events": [
         {
             "event": "Throwball(Girls)",
-            "fee": "Rs.505",
+            "fee": "Rs.500",
             "venue": "Coming soon",
             "date": "Coming soon",
             "prize1": "Worth Rs.5000",
@@ -10,17 +10,17 @@
             "descr": "A team should constitue of 7+5 players.\nThe best of three will be considered.\n"
         },
         {
-            "event": "Tiger 5 football",
-            "fee": "Rs.505",
+            "event": "Football(Soccer 11)",
+            "fee": "Rs.500",
             "venue": "Coming soon",
             "date": "Conimg soon",
             "prize1": "worth Rs.5000",
             "prize2": "Worth Rs.3000",
-            "descr": "A team should constitute of 5+2 players.\n Time will be 20-5-20 in minutes.\n Substitution will be on rolling basis.\n No off side.\nNo throw in,kick in will be taken.\n Defender and forwards cannot enter the D.\nAny fouls or free kick, only two step kick will be allowed.\nPenalty one step kick.\nNo back pass to goalkeeper.\nGoalkeeper cannot handle the back pass.\nIf goalkeeper handles the balls using his hands outside the Dee area penalty will be awarded.\nA goal can be scpred directly from the corner but not from kick in.\nIn case of draw, three penalties shoot out.\n"
+            "descr": "A team Should consist of 11+5 players.\n If a match eds in draw, the tie breaker system will be followed.\n"
         },
         {
             "event": "Volleyball(boys)",
-            "fee": "Rs.505",
+            "fee": "Rs.500",
             "venue": "Coming soon",
             "date": "Conimg soon",
             "prize1": "worth Rs.5000",
@@ -29,7 +29,7 @@
         },
         {
             "event": "Basketball(boys)",
-            "fee": "Rs.505",
+            "fee": "Rs.500",
             "venue": "Coming soon",
             "date": "Conimg soon",
             "prize1": "worth Rs.5000",
