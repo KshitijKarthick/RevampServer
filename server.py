@@ -71,8 +71,8 @@ class Server():
                 events = cultural_event_list['events']
             elif choice.title() == "Management":
                 events = management_event_list['events']
-            elif choice.title() == "Technical":
-                events = technical_event_list['events']
+            elif choice.title() == "Sports":
+                events = sports_event_list['events']
             elif choice.title() == "All":
                 events = technical_event_list['events'] + cultural_event_list['events'] + sports_event_list['events'] + management_event_list['events']
             else:
