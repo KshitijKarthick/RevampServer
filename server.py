@@ -13,7 +13,7 @@ class Server():
 
     @cherrypy.expose
     def eventsList(self,choice):
-        ''' 
+        """ 
             Returns Type : JSON
                 status_code : 0 -> Success, -1 -> Failed
                 message     : Status Message
@@ -24,7 +24,7 @@ class Server():
                 /eventsList/Cultural   ->   Cultural Event List
                 /eventsList/Sports     ->   Sports Event List
                 /eventsList/Management ->   Management Event List
-        '''
+        """
         message="Success, Event List Obtained"
         status_code=0;
         events=[]
@@ -47,7 +47,7 @@ class Server():
 
     @cherrypy.expose
     def eventsStatus(self,choice):
-        ''' 
+        """ 
             Returns Type : JSON
                 status_code : 0 -> Success, -1 -> Failed
                 message     : Status Message
@@ -59,7 +59,7 @@ class Server():
                 /eventsStatus/Sports     ->   Sports Status Details
                 /eventsStatus/Management ->   Management Status Details
                 /eventsStatus/All        ->   All Events Status Details
-        '''
+        """
 
         message="Success, Event List Obtained"
         status_code=0;
@@ -84,7 +84,7 @@ class Server():
         return json.dumps({'status_code':status_code,'message':message,'hash':json.dumps(events).__hash__()})
 
 if __name__ == '__main__':
-    ''' Setting up the Server with Specified Configuration'''
+    """ Setting up the Server with Specified Configuration"""
 
     server_config = ConfigParser.RawConfigParser()
     env = Environment(loader=FileSystemLoader(''))
