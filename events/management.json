@@ -1,103 +1,103 @@
 {
-    "events": [
-        {
-            "event": "THE RECRUITER",
-            "fee": "Rs.150",
-            "venue": "Coming soon",
-            "date": "Coming soon",
-            "prize1": "Worth Rs.3000",
-            "prize2": "Worth Rs.2000",
-            "descr": "Individual participation.\nParticipants need to follow formal dress code.\nJudges decission would be final.\nOpen for both PG and UG categories.\n."
-        },
-        {
-            "event": "BUSINESS QUIZ",
-            "fee": "Rs.150",
-            "venue": "Coming soon",
-            "date": "Conimg soon",
-            "prize1": "worth Rs.3000",
-            "prize2": "Worth Rs.2000",
-            "descr": "Maximum of three members in a team.\nJudges decisions would be final.\nThis event is open to undergraduates and Post graduates students from all streams.\n"
-        },
-        {
-            "event": "FINANCE",
-            "fee": "Rs.150",
-            "venue": "Coming soon",
-            "date": "Conimg soon",
-            "prize1": "worth Rs.3000",
-            "prize2": "Worth Rs.2000",
-            "descr": "Four members in a team.\nParticipants should carry their own calculators, laptops and data cards.\nThis event is open to undergraduates and Post graduates students from all streams."
-        },
-        {
-            "event": "BUSINESS PLAN",
-            "fee": "Rs.150",
-            "venue": "Coming soon",
-            "date": "Conimg soon",
-            "prize1": "worth Rs.3000",
-            "prize2": "Worth Rs.2000",
-            "descr": "Maximum 4 members per team.\n2 hard copies and one soft copy to be submitted at the time of registration.\nTime limit 8+2 mins.\nThis event is open to undergraduates and Post graduates students from all streams.\n Any product of the participants choice.\n"
-        },
-        {
-            "event": "BEST MANAGER",
-            "fee": "Rs.100",
-            "venue": "Coming soon",
-            "date": "Conimg soon",
-            "prize1": "worth Rs.3000",
-            "prize2": "N.A.",
-            "descr": "Number of Participants for the event will be only 1(One) per college.\n2 Laptop and Pen Drive Compulsory.\nThe Best Manager will be carried in different rounds.\nThis event is open to undergraduates and Post graduates students from all streams.\n"
-        },
-        {
-            "event": "BUSINESS COLLAGE",
-            "fee": "Rs.150",
-            "venue": "Coming soon",
-            "date": "Conimg soon",
-            "prize1": "worth Rs.3000",
-            "prize2": "worth Rs.2000",
-            "descr": "Team Size: 2(Two) Persons Per Team.\nMaterials should be brought by participants.\n Topic will be given on Spot.\nTime Limit: 60 Min.\nThis event is open to undergraduates and Post graduates students from all streams.\n"
-        },
-        {
-            "event": "TEAM BUILDING",
-            "fee": "Rs.900",
-            "venue": "Coming soon",
-            "date": "Conimg soon",
-            "prize1": "worth Rs.5000",
-            "prize2": "worth Rs.3000",
-            "descr": "6 members in a team"
-        },
-        {
-            "event": "CASE STUDY ANALYSIS",
-            "fee": "Rs.150",
-            "venue": "Coming soon",
-            "date": "Conimg soon",
-            "prize1": "worth Rs.3000",
-            "prize2": "worth Rs.2000",
-            "descr": "The number of participants is two.\nThe students are required to report and register with the event coordinators and collect their case at 9.30 am from MBA department. Competition would start at 10.30 am.\nParticipants are required to give a power point presentation of the case in not more than 12+3 minutes time.\nParticipants must submit the softcopy of their presentation to the faculty coordinators half an hour before the competition.\nThis event is open to undergraduates and Post graduates students from all streams.\n"
-        },
-        {
-            "event": "MARKETING",
-            "fee": "Rs.150",
-            "venue": "Coming soon",
-            "date": "Conimg soon",
-            "prize1": "worth Rs.3000",
-            "prize2": "worth Rs.2000",
-            "descr": "\nFor UG students.\n Team of 3 people.\n2. Time for presentation: 8+2 minutes.\n\nFor PG students.\nTeam of 3 people.\nTime for presentation: 10+5 minutes"
-        },
-        {
-            "event": "PAPER PRESENTATION",
-            "fee": "Rs.150",
-            "venue": "Coming soon",
-            "date": "Conimg soon",
-            "prize1": "worth Rs.3000",
-            "prize2": "worth Rs.2000",
-            "descr": "\nThis event is open to undergraduates and Post graduates students from all streams.\n Maximum 3 teams from each college\nMaximum 3 participants per team.\nNo entrant can be part of more than one team.\nThe organizers reserve the right to make any changes to the event, format, date, rules and any matter related to this event, at any time before or during the event.\n"
-        },
-        {
-            "event": "VIDEO ADS",
-            "fee": "Rs.150",
-            "venue": "Coming soon",
-            "date": "Conimg soon",
-            "prize1": "worth Rs.2000",
-            "prize2": "worth Rs.1500",
-            "descr": "\nThis event is open to undergraduates and post graduates students from all streams.\n Maximum 3 teams from each college.\nMaximum 3 participants per team.\nNo entrant can be part of more than one team.\n\nGeneral Guidelines: \n\nThere are three topics, i.e., \u2018Entrepreneurship\u2019, \u2018Tourism\u2019 and \u2018Consumerism\u2019.\nThe submissions must include 1 Video and 1 print AD.\nThe duration of the video should be between 00:45-1:00 minutes. The video must be rendered in MP4 format. The print AD should be an image in JPG format with a resolution of 300 DPI.\nThe last date for submissions is 22nd march, 2015.\nThe materials should not contain any objectionable content. Obscenity and vulgarity will lead to disqualification of the team.\nThe video shall be uploaded on our revamp facebook page. The additional criteria would be maximum possible likes on both video and print ad.\n"
-        }
-    ]
+   "events": [
+      {
+         "date": "Coming soon",
+         "prize2": "Worth \u20b92000",
+         "prize1": "Worth \u20b93000",
+         "fee": "\u20b9150",
+         "venue": "Coming soon",
+         "event": "THE RECRUITER",
+         "descr": "Individual participation.\nParticipants need to follow formal dress code.\nJudges decission would be final.\nOpen for both PG and UG categories.\n."
+      },
+      {
+         "date": "Conimg soon",
+         "prize2": "Worth \u20b92000",
+         "prize1": "worth \u20b93000",
+         "fee": "\u20b9150",
+         "venue": "Coming soon",
+         "event": "BUSINESS QUIZ",
+         "descr": "Maximum of three members in a team.\nJudges decisions would be final.\nThis event is open to undergraduates and Post graduates students from all streams.\n"
+      },
+      {
+         "date": "Conimg soon",
+         "prize2": "Worth \u20b92000",
+         "prize1": "worth \u20b93000",
+         "fee": "\u20b9150",
+         "venue": "Coming soon",
+         "event": "FINANCE (Best Accountant)",
+         "descr": "Four members in a team.\nParticipants should carry their own calculators, laptops and data cards.\nThis event is open to undergraduates and Post graduates students from all streams."
+      },
+      {
+         "date": "Conimg soon",
+         "prize2": "Worth \u20b92000",
+         "prize1": "worth \u20b93000",
+         "fee": "\u20b9150",
+         "venue": "Coming soon",
+         "event": "BUSINESS PLAN",
+         "descr": "Maximum 4 members per team.\n2 hard copies and one soft copy to be submitted at the time of registration.\nTime limit 8+2 mins.\nThis event is open to undergraduates and Post graduates students from all streams.\n Any product of the participants choice.\n"
+      },
+      {
+         "date": "Conimg soon",
+         "prize2": " - ",
+         "prize1": "worth \u20b93000",
+         "fee": "\u20b9100",
+         "venue": "Coming soon",
+         "event": "BEST MANAGER",
+         "descr": "Number of Participants for the event will be unlimited per college.\n2 Laptop and Pen Drive Compulsory.\nThe Best Manager will be carried in different rounds.\nThis event is open to undergraduates and Post graduates students from all streams.\n"
+      },
+      {
+         "date": "Conimg soon",
+         "prize2": "worth \u20b92000",
+         "prize1": "worth \u20b93000",
+         "fee": "\u20b9150",
+         "venue": "Coming soon",
+         "event": "BUSINESS COLLAGE",
+         "descr": "Team Size: 2(Two) Persons Per Team.\nMaterials should be brought by participants.\n Topic will be given on Spot.\nTime Limit: 60 Min.\nThis event is open to undergraduates and Post graduates students from all streams.\n"
+      },
+      {
+         "date": "Conimg soon",
+         "prize2": "worth \u20b93000",
+         "prize1": "worth \u20b95000",
+         "fee": "\u20b9900",
+         "venue": "Coming soon",
+         "event": "TEAM BUILDING",
+         "descr": "6 members in a team"
+      },
+      {
+         "date": "Conimg soon",
+         "prize2": "worth \u20b92000",
+         "prize1": "worth \u20b93000",
+         "fee": "\u20b9150",
+         "venue": "Coming soon",
+         "event": "CASE STUDY ANALYSIS",
+         "descr": "The number of participants is two.\nThe students are required to report and register with the event coordinators and collect their case at 9.30 am from MBA department. Competition would start at 10.30 am.\nParticipants are required to give a power point presentation of the case in not more than 12+3 minutes time.\nParticipants must submit the softcopy of their presentation to the faculty coordinators half an hour before the competition.\nThis event is open to undergraduates and Post graduates students from all streams.\n"
+      },
+      {
+         "date": "Conimg soon",
+         "prize2": "worth \u20b92000",
+         "prize1": "worth \u20b93000",
+         "fee": "\u20b9150",
+         "venue": "Coming soon",
+         "event": "MARKETING",
+         "descr": "\nFor UG students.\n Team of 3 people.\n2. Time for presentation: 8+2 minutes.\n\nFor PG students.\nTeam of 3 people.\nTime for presentation: 10+5 minutes"
+      },
+      {
+         "date": "Conimg soon",
+         "prize2": "worth \u20b92000",
+         "prize1": "worth \u20b93000",
+         "fee": "\u20b9100",
+         "venue": "Coming soon",
+         "event": "PAPER PRESENTATION (MBA)",
+         "descr": "\nThis event is open to undergraduates and Post graduates students from all streams.\n Maximum 3 teams from each college\nMaximum 3 participants per team.\nNo entrant can be part of more than one team.\nThe organizers reserve the right to make any changes to the event, format, date, rules and any matter related to this event, at any time before or during the event.\n"
+      },
+      {
+         "date": "Conimg soon",
+         "prize2": "worth \u20b91500",
+         "prize1": "worth \u20b92000",
+         "fee": "\u20b9150",
+         "venue": "Coming soon",
+         "event": "VIDEO ADS",
+         "descr": "\nThis event is open to undergraduates and post graduates students from all streams.\n Maximum 3 teams from each college.\nMaximum 3 participants per team.\nNo entrant can be part of more than one team.\n\nGeneral Guidelines: \n\nThere are three topics, i.e., \u2018Entrepreneurship\u2019, \u2018Tourism\u2019 and \u2018Consumerism\u2019.\nThe submissions must include 1 Video and 1 print AD.\nThe duration of the video should be between 00:45-1:00 minutes. The video must be rendered in MP4 format. The print AD should be an image in JPG format with a resolution of 300 DPI.\nThe last date for submissions is 22nd march, 2015.\nThe materials should not contain any objectionable content. Obscenity and vulgarity will lead to disqualification of the team.\nThe video shall be uploaded on our revamp facebook page. The additional criteria would be maximum possible likes on both video and print ad.\n"
+      }
+   ]
 }
