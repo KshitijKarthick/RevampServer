@@ -1,40 +1,40 @@
 {
-   "events": [
-      {
-         "date": "Coming soon",
-         "prize2": "Worth \u20b93000",
-         "prize1": "Worth \u20b95000",
-         "fee": "\u20b9500",
-         "venue": "Coming soon",
-         "event": "Throwball (Girls)",
-         "descr": "A team should constitute of 7+5 players\nThe best of three will be considered.\n"
-      },
-      {
-         "date": "Conimg soon",
-         "prize2": "Worth \u20b93000",
-         "prize1": "worth \u20b95000",
-         "fee": "\u20b9500",
-         "venue": "Coming soon",
-         "event": "Football (Soccer 11)",
-         "descr": "A team Should consist of 11+5 players.\n If a match ends in draw, the tie breaker system will be followed.\n"
-      },
-      {
-         "date": "Conimg soon",
-         "prize2": "Worth \u20b93000",
-         "prize1": "worth \u20b95000",
-         "fee": "\u20b9500",
-         "venue": "Coming soon",
-         "event": "Volleyball (boys)",
-         "descr": "A team should constitute of 6+6 player.\nPoints will given on the basis of TT system.\n The rest of three will be considered.\n"
-      },
-      {
-         "date": "Conimg soon",
-         "prize2": "Worth \u20b93000",
-         "prize1": "worth \u20b95000",
-         "fee": "\u20b9500",
-         "venue": "Coming soon",
-         "event": "Basketball (boys)",
-         "descr": "A team should constitute of 6+6 players\nThe matches will be played in four quarters(i.e. 10-2-10-5-10-2-10) in minutes.\n"
-      }
-   ]
+    "events": [
+        {
+            "date": "26th March 9:00 AM",
+            "prize2": "Worth \u20b93000",
+            "prize1": "Worth \u20b95000",
+            "fee": "\u20b9500",
+            "venue": "COLLEGE GROUNDS",
+            "event": "Throwball (Girls)",
+            "descr": "A team should constitute of 7+5 players\nThe best of three will be considered.\n"
+        },
+        {
+            "date": "26th March 9:00 AM",
+            "prize2": "Worth \u20b93000",
+            "prize1": "worth \u20b95000",
+            "fee": "\u20b9500",
+            "venue": "COLLEGE GROUNDS",
+            "event": "Football (Soccer 11)",
+            "descr": "A team Should consist of 11+5 players.\n If a match ends in draw, the tie breaker system will be followed.\n"
+        },
+        {
+            "date": "26th March 9:00 AM",
+            "prize2": "Worth \u20b93000",
+            "prize1": "worth \u20b95000",
+            "fee": "\u20b9500",
+            "venue": "COLLEGE GROUNDS",
+            "event": "Volleyball (boys)",
+            "descr": "A team should constitute of 6+6 player.\nPoints will given on the basis of TT system.\n The rest of three will be considered.\n"
+        },
+        {
+            "date": "26th March 9:00 AM",
+            "prize2": "Worth \u20b93000",
+            "prize1": "worth \u20b95000",
+            "fee": "\u20b9500",
+            "venue": "COLLEGE GROUNDS",
+            "event": "Basketball (boys)",
+            "descr": "A team should constitute of 6+6 players\nThe matches will be played in four quarters(i.e. 10-2-10-5-10-2-10) in minutes.\n"
+        }
+    ]
 }
