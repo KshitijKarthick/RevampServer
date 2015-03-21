@@ -3,9 +3,12 @@ import ConfigParser
 import json
 import mimetypes
 import os
+import gspread
+import sys
 from jinja2 import Environment, FileSystemLoader
 class Server():
 
+    worksheet = None
     @cherrypy.expose
     def index(self):
 
@@ -44,6 +47,40 @@ class Server():
                 status_code=-1
                 message="Failed, Server Error! Error Occured while retreiving Event List"
         return json.dumps({'status_code':status_code,'message':message,'events':events})
+
+    def googleFormsOperation(self, phone_num, event):
+
+        phone_num_list = self.worksheet.findall(str(phone_num))
+        for tuple_phone_num in phone_num_list:
+            tuple_event = self.worksheet.row_values(tuple_phone_num.row)[5]
+            if( tuple_event == event):
+                self.worksheet.update_cell(tuple_phone_num.row, 7, 'Paid')
+
+    def initGoogleForms(self):
+
+        gc = gspread.login('hasanandroidapp@gmail.com', '31dec14!')
+        sh = gc.open("Testing python (Responses)")
+        self.worksheet = sh.get_worksheet(0)
+
+    @cherrypy.expose
+    def pay(self):
+
+        received_data = cherrypy.request.body.read()
+        try:
+            decoded_data = json.loads(received_data)
+            phone_num = decoded_data['phone_num']
+            event = decoded_data['event']
+        except KeyError:
+            data_sent = {"status": 2, "message": "Invalid Data Sent to the Server", 'content': ""}
+            return json.dumps(data_sent)
+        try:
+            self.googleFormsOperation(phone_num, event)
+            print("No Error")
+            return json.dumps({"status_code":0,"status":"Updated Successfully"})
+        except:
+            self.initGoogleForms()
+            self.googleFormsOperation(phone_num, event)
+            return json.dumps({"status_code":0,"status":"Updated Successfully"})
 
     @cherrypy.expose
     def eventsStatus(self,choice):
