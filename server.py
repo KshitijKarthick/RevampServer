@@ -1,18 +1,20 @@
+import os
+import sys
+import json
+import gspread
 import cherrypy
 import ConfigParser
-import json
-import mimetypes
-import os
-import gspread
-import sys
 from jinja2 import Environment, FileSystemLoader
 class Server():
 
-    worksheet = None
     @cherrypy.expose
     def index(self):
+        """
+            Render HTML page in the present directory
+        """
 
-        return "Seems Like You're Lost :D"
+        template = env.get_template('index.html')
+        return template.render()
 
     @cherrypy.expose
     def eventsList(self,choice):
@@ -28,6 +30,7 @@ class Server():
                 /eventsList/Sports     ->   Sports Event List
                 /eventsList/Management ->   Management Event List
         """
+
         message="Success, Event List Obtained"
         status_code=0;
         events=[]
@@ -47,40 +50,6 @@ class Server():
                 status_code=-1
                 message="Failed, Server Error! Error Occured while retreiving Event List"
         return json.dumps({'status_code':status_code,'message':message,'events':events})
-
-    def googleFormsOperation(self, phone_num, event):
-
-        phone_num_list = self.worksheet.findall(str(phone_num))
-        for tuple_phone_num in phone_num_list:
-            tuple_event = self.worksheet.row_values(tuple_phone_num.row)[5]
-            if( tuple_event == event):
-                self.worksheet.update_cell(tuple_phone_num.row, 7, 'Paid')
-
-    def initGoogleForms(self):
-
-        gc = gspread.login('hasanandroidapp@gmail.com', '31dec14!')
-        sh = gc.open("Testing python (Responses)")
-        self.worksheet = sh.get_worksheet(0)
-
-    @cherrypy.expose
-    def pay(self):
-
-        received_data = cherrypy.request.body.read()
-        try:
-            decoded_data = json.loads(received_data)
-            phone_num = decoded_data['phone_num']
-            event = decoded_data['event']
-        except KeyError:
-            data_sent = {"status": 2, "message": "Invalid Data Sent to the Server", 'content': ""}
-            return json.dumps(data_sent)
-        try:
-            self.googleFormsOperation(phone_num, event)
-            print("No Error")
-            return json.dumps({"status_code":0,"status":"Updated Successfully"})
-        except:
-            self.initGoogleForms()
-            self.googleFormsOperation(phone_num, event)
-            return json.dumps({"status_code":0,"status":"Updated Successfully"})
 
     @cherrypy.expose
     def eventsStatus(self,choice):
@@ -120,6 +89,113 @@ class Server():
                 message="Failed, Server Error! Error Occured while retreiving Event List"
         return json.dumps({'status_code':status_code,'message':message,'hash':json.dumps(events).__hash__()})
 
+    @cherrypy.expose
+    def eventsOf(self, usn):
+        """
+            Returns Type : JSON
+                status_code : 0 -> Success, -1 -> Failed
+                message     : Status Message
+                event       : Event List
+
+            Request Type : GET Request
+                URL
+                    /eventsOf/<usn>  -> Specifed usn, all events returned
+
+                Data Received -> USN 
+        """
+
+        try:
+            events_list = self.googleFormsFindEvent(usn)
+            return json.dumps({"status_code":0,"message":"Updated Successfully","events":events_list})
+        except:
+            self.initGoogleForms()
+            events_list = self.googleFormsFindEvent(usn)
+            return json.dumps({"status_code":0,"message":"Updated Successfully","events":events_list})
+
+    @cherrypy.expose
+    def payForEvent(self):
+        """
+            Returns Type : JSON
+                status_code : 0 -> Success, -1 -> Failed
+                message     : Status Message
+
+            Request Type : POST Request
+                URL
+                    /payForEvent/  -> Specifed phone_num, event present in a tuples
+                        status is set to Paid
+
+                Data Received -> JSON
+                    Keys:
+                        phone_num   ->  Phone num of user
+                        event       ->  Event name of user  
+        """
+
+        received_data = cherrypy.request.body.read()
+        try:
+            decoded_data = json.loads(received_data)
+            phone_num = decoded_data['phone_num']
+            event = decoded_data['event']
+        except KeyError:
+            data_sent = {"status": 2, "message": "Invalid Data Sent to the Server", 'content': ""}
+            return json.dumps(data_sent)
+        try:
+            self.googleFormsPayEvent(phone_num, event)
+            return json.dumps({"status_code":0,"message":"Updated Successfully"})
+        except:
+            self.initGoogleForms()
+            self.googleFormsPayEvent(phone_num, event)
+            return json.dumps({"status_code":0,"message":"Updated Successfully"})
+
+    def googleFormsPayEvent(self, phone_num, event):
+        """
+            Search for the Phone num, obtain the specified event and set status
+            to Paid.
+
+        """
+
+        phone_num_list = self.worksheet.findall(str(phone_num))
+        for tuple_phone_num in phone_num_list:
+            tuple_event = self.worksheet.row_values(tuple_phone_num.row)[5]
+            if( tuple_event == event):
+                self.worksheet.update_cell(tuple_phone_num.row, 7, 'Paid')
+
+    def initGoogleForms(self):
+        """
+            Login to the GoogleForms, Authenticate the user details given in the config file,
+            Search for the worksheet,
+            Obtain the worksheet and set it as a data member.
+        """
+
+        try:
+            print("Authenticating Login")
+            server_config = ConfigParser.RawConfigParser()
+            server_config.read('server.conf')
+            email=server_config.get('GoogleForms','email')
+            password=server_config.get('GoogleForms','password')
+            form_title=server_config.get('GoogleForms','form_title')
+            gc = gspread.login(email, password)
+            print("Authentication Successfull")
+            sh = gc.open(form_title)
+            self.worksheet = sh.get_worksheet(0)
+            print("Worksheet Access Obtained")
+        except:
+            print("Invalid Authentication")
+            exit(-1)
+
+    def googleFormsFindEvent(self, usn):
+        """
+            Find all the tuples with the specified usn,
+            Return type
+                List -> Events for the specified USN
+        """
+
+        events_list = []
+        usn_list = self.worksheet.findall(str(usn))
+        for usn in usn_list:
+            events_list.append(self.worksheet.row_values(usn.row)[5])
+        return list(set(events_list))
+
+
 if __name__ == '__main__':
     """ Setting up the Server with Specified Configuration"""
 
@@ -132,6 +208,10 @@ if __name__ == '__main__':
         '/events': {
             'tools.staticdir.on': True,
             'tools.staticdir.dir': './events'
+        },
+        '/resources': {
+            'tools.staticdir.on': True,
+            'tools.staticdir.dir': './resources'
         }
     }
     technical_event_list=json.loads(open("events/technical.json","r").read())
