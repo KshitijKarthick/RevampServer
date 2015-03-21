@@ -90,7 +90,7 @@ class Server():
         return json.dumps({'status_code':status_code,'message':message,'hash':json.dumps(events).__hash__()})
 
     @cherrypy.expose
-    def eventsOf(self, usn):
+    def eventsOf(self, phone_num):
         """
             Returns Type : JSON
                 status_code : 0 -> Success, -1 -> Failed
@@ -99,17 +99,17 @@ class Server():
 
             Request Type : GET Request
                 URL
-                    /eventsOf/<usn>  -> Specifed usn, all events returned
+                    /eventsOf/<phone_num>  -> Specifed phone_num, all events returned
 
-                Data Received -> USN 
+                Data Received -> Phone Num
         """
 
         try:
-            events_list = self.googleFormsFindEvent(usn)
+            events_list = self.googleFormsFindEvent(phone_num)
             return json.dumps({"status_code":0,"message":"Updated Successfully","events":events_list})
         except:
             self.initGoogleForms()
-            events_list = self.googleFormsFindEvent(usn)
+            events_list = self.googleFormsFindEvent(phone_num)
             return json.dumps({"status_code":0,"message":"Updated Successfully","events":events_list})
 
     @cherrypy.expose
@@ -182,17 +182,17 @@ class Server():
             print("Invalid Authentication")
             exit(-1)
 
-    def googleFormsFindEvent(self, usn):
+    def googleFormsFindEvent(self, phone_num):
         """
-            Find all the tuples with the specified usn,
+            Find all the tuples with the specified phone_num,
             Return type
-                List -> Events for the specified USN
+                List -> Events for the specified Phone Num
         """
 
         events_list = []
-        usn_list = self.worksheet.findall(str(usn))
-        for usn in usn_list:
-            events_list.append(self.worksheet.row_values(usn.row)[5])
+        phone_num_list = self.worksheet.findall(str(phone_num))
+        for phone_num in phone_num_list:
+            events_list.append(self.worksheet.row_values(phone_num.row)[5])
         return list(set(events_list))
 
 
