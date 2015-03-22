@@ -4,12 +4,32 @@
         height: 99%;
     }
     body{
-        background-color: #D4E157;
+        background-color: #43C6F5;
     }
     .btn, .input-group-addon{
         background-color: #E6EE9C;
     }
 }
+
+@font-face {
+    font-family: "Essay";
+    font-weight: bold;
+    src: url("/resources/static/fonts/Essays1743-Bold.woff") format('woff');
+}
+
+@font-face {
+    font-family: "Essay";
+    src: url("/resources/static/fonts/Essays1743.woff") format('woff');
+}
+
+@font-face {
+    font-family: "Essay";
+    font-weight: bold;
+    font-style: italic;
+    src: url("/resources/static/fonts/Essays1743-BoldItalic.woff") format('woff');
+}
+
+
 @page {
     size: A4;
     margin: 0;
