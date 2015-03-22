@@ -191,15 +191,60 @@ class Server():
         """
             Find all the tuples with the specified phone_num,
             Return type
-                List -> Events for the specified Phone Num
+                List -> Events and their Details for the specified Phone Num
         """
 
         events_list = []
         phone_num_list = self.worksheet.findall(str(phone_num))
         for phone_num in phone_num_list:
             events_list.append(self.worksheet.row_values(phone_num.row)[5])
-        return list(set(events_list))
+        events_list = set(events_list)
+        event_list_details = []
+        for event in events_list:
+            event_details = self.findEventDetails(technical_event_list['events'], event)
+            if event_details != None:
+                event_list_details.append(event_details)
+                continue
+            event_details = self.findEventDetails(cultural_event_list['events'], event)
+            if event_details != None:
+                event_list_details.append(event_details)
+                continue
+            event_details = self.findEventDetails(management_event_list['events'], event)
+            if event_details != None:
+                event_list_details.append(event_details)
+                continue
+            event_details = self.findEventDetails(sports_event_list['events'], event)
+            if event_details != None:
+                event_list_details.append(event_details)
+                continue
+            event_list_details.append({
+                'event' :   event,
+                'venue' :   "Details Unavailable",
+                'fee'   :   "Details Unavailable",
+                'date'  :   "Details Unavailable"
+            })
+        return event_list_details
 
+    def findEventDetails(self, event_list, key_event):
+        """
+            Searches for the details of the events specified among a list of all events
+            Return Type Dictionary (if event is found) else None
+                Keys:
+                    event   ->  Event Name
+                    venue   ->  Venue
+                    fee     ->  Fee for the event
+                    date    ->  Date and time of the event
+        """
+
+        for event in event_list:
+                if event['event'] == key_event:
+                   return {
+                        'event' :   key_event,
+                        'venue' :   event['venue'],
+                        'fee'   :   event['fee'],
+                        'date'  :   event['date']
+                    }
+        return None
 
 if __name__ == '__main__':
     """ Setting up the Server with Specified Configuration"""
