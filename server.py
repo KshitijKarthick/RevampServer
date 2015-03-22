@@ -5,6 +5,7 @@ import gspread
 import cherrypy
 import ConfigParser
 from jinja2 import Environment, FileSystemLoader
+from oauth2client.client import SignedJwtAssertionCredentials
 class Server():
 
     @cherrypy.expose
@@ -106,11 +107,11 @@ class Server():
 
         try:
             events_list = self.googleFormsFindEvent(phone_num)
-            return json.dumps({"status_code":0,"message":"Updated Successfully","events":events_list})
+            return json.dumps({"status_code":0,"message":"Retrieved Successfully","events":events_list})
         except:
             self.initGoogleForms()
             events_list = self.googleFormsFindEvent(phone_num)
-            return json.dumps({"status_code":0,"message":"Updated Successfully","events":events_list})
+            return json.dumps({"status_code":0,"message":"Retrieved Successfully","events":events_list})
 
     @cherrypy.expose
     def payForEvent(self):
@@ -170,17 +171,21 @@ class Server():
             print("Authenticating Login")
             server_config = ConfigParser.RawConfigParser()
             server_config.read('server.conf')
-            email=server_config.get('GoogleForms','email')
-            password=server_config.get('GoogleForms','password')
-            form_title=server_config.get('GoogleForms','form_title')
-            gc = gspread.login(email, password)
+            spreadsheet_title=server_config.get('GoogleForms','spreadsheet_title')
+            json_file_name=server_config.get('GoogleForms','oauth_service_json')
+            json_file = file(json_file_name, 'r')
+            key = json.loads(json_file.read())
+            json_file.close()
+            scope = ['https://spreadsheets.google.com/feeds', 'https://docs.google.com/feeds']
+            credentials = SignedJwtAssertionCredentials(key['client_email'],key['private_key'], scope)
+            gc = gspread.authorize(credentials)
             print("Authentication Successfull")
-            sh = gc.open(form_title)
+            sh = gc.open(spreadsheet_title)
             self.worksheet = sh.get_worksheet(0)
             print("Worksheet Access Obtained")
-        except:
-            print("Invalid Authentication")
-            exit(-1)
+        except Exception as e:
+            print("Invalid Authentication",e)
+            raise e
 
     def googleFormsFindEvent(self, phone_num):
         """
