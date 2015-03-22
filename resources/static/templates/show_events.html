@@ -5,7 +5,7 @@
             height: 100%;
         }
         #usn-container{
-            background-color:  #eaebec;
+            background-color:  #E6EE9C;
             display: inline;
             padding: 10px 10px 10px 10px;
         }
@@ -43,9 +43,9 @@
             border-top:1px solid #fafafa;
             border-bottom:1px solid #e0e0e0;
 
-            background: #ededed;
-            background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
-            background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
+            background: #E6EE9C;
+            background: -webkit-gradient(linear, left top, left bottom, from(#E6EE9C), to(#E7EF9D));
+            background: -moz-linear-gradient(top,  #E6EE9C,  #E7EF9D);
         }
         table th:first-child {
             text-align: left;
@@ -73,8 +73,8 @@
         table td {
             padding:18px;
             border-top: 1px solid #ffffff;
-            border-bottom:1px solid #e0e0e0;
-            border-left: 1px solid #e0e0e0;
+            border-bottom:1px solid #E0E793;
+            border-left: 1px solid #E0E793;
 
             background: #fafafa;
             background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
@@ -108,7 +108,7 @@
         <div data-ng-switch-when="false">
             <center>
                 <div id="usn-container">
-                    <span>USN: </span><span>{{usn}}</span>
+                    <strong><span>Phone Number: </span><span>{{usn}}</span></strong>
                 </div>
             </center>
             <div class="table-wrapper">
@@ -118,8 +118,8 @@
                         <th>Paid?</th>
                     </thead>
                     <tbody>
-                        <tr data-ng-repeat="event in events | orderBy:'name'">
-                            <td class="event-name">{{event.name}}</td>
+                        <tr data-ng-repeat="event in events | orderBy:'name'| uppercase">
+                            <td class="event-name">{{event.event}}</td>
                             <td data-ng-click="event.pay=!event.pay">
                                 <input type="checkbox" ng-model="event.pay" stop-event>
                             </td>

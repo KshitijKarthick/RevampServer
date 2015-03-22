@@ -2,18 +2,27 @@ var app = angular.module('RegApp',['ngRoute']);
 
 app.factory('EventsFactory',['$http',function($http){
     var factory = {};
-    var events = [{name:'Some Event', pay: false},{name:'Some other event with a very big name', pay: false},{name:'bfc', pay: false},{name:'sdsf', pay: false}];
     factory.getEvents = function(usn){
-        this.events = events;
         this.usn = usn;
-        $http.get('/eventsOf/'+usn )
-        .success(function(data,status,headers,config){
-            console.log(data)
-        })
-        .error(function(data,status,headers,config){
-            console.log("Error");
-        })
-        return events;
+        return $http.get('/eventsOf/'+usn);
+    }
+
+    factory.pay = function(index,callback){
+        function payNext(){
+            if(index+1 < factory.eventsToPayFor.length){
+                factory.pay(index+1,callback);
+            }else{
+                callback();
+            }
+        }
+
+        $http.post('payForEvent',{phone_num: factory.usn, event: factory.eventsToPayFor[index]['event']})
+        .success(payNext)
+        .error(payNext);
+    }
+
+    factory.payAllAndDo = function(callback){
+        factory.pay(0,callback);
     }
     return factory;
 }]);
@@ -23,9 +32,18 @@ app.controller('USNController', ['$scope', '$location', 'EventsFactory', functio
     $scope.data.usn = '';
     $scope.loading= false;
     $scope.getEvents = function(){
-        EventsFactory.getEvents($scope.data.usn);
         $scope.loading = true;
-        $location.path('/events');
+        EventsFactory
+        .getEvents($scope.data.usn)
+        .success(function(data){
+            $scope.loading = false;
+            $location.path('/events');
+            EventsFactory.events = data.events;
+        })
+        .error(function(){
+            $scope.loading = false;
+            alert("Error Fetching details! Try again.");
+        });
     }
 }]);
 
@@ -34,21 +52,17 @@ app.controller('EventsController',['$scope', '$http','$location','EventsFactory'
     $scope.usn = EventsFactory.usn;
     $scope.loading = false;
     $scope.pay = function(){
-        $scope.eventsToPayFor =
-        $scope.events.filter(function(event){
+        EventsFactory.eventsToPayFor =
+            $scope.events.filter(function(event){
             return event.pay;
-        }).
-        map(function(event){
-            return event.name;
         });
 
-        if($scope.eventsToPayFor.length > 0){
-            EventsFactory.postData = {
-                usn: $scope.usn,
-                events: $scope.eventsToPayFor
-            };
+        if(EventsFactory.eventsToPayFor.length > 0){
             $scope.loading = true;
-            $location.path('/receipt');
+            EventsFactory.payAllAndDo(function(){
+                $scope.loading = false;
+                $location.path('/receipt');
+            });
         }
         else{
             alert("No Events Selected!");
@@ -57,7 +71,7 @@ app.controller('EventsController',['$scope', '$http','$location','EventsFactory'
 }]);
 
 app.controller('ReceiptController',['$scope','EventsFactory',function($scope, EventsFactory){
-    $scope.events = EventsFactory.postData.events;
+    $scope.events = EventsFactory.eventsToPayFor;
 }]);
 
 app.directive('loading', function() {
@@ -79,21 +93,21 @@ app.directive('stopEvent', function () {
 });
 
 app.config(['$routeProvider',
-        function($routeProvider) {
-            $routeProvider.
-            when('/', {
-                templateUrl: '/resources/static/templates/get_usn.html',
-                controller: 'USNController'
-            }).
-            when('/events',{
-                templateUrl: '/resources/static/templates/show_events.html',
-                controller: 'EventsController'
-            }).
-            when('/receipt',{
-                templateUrl: '/resources/static/templates/show_receipt.html',
-                controller: 'ReceiptController'
-            }).
-            otherwise({
-                redirectTo: '/'
-            });
+            function($routeProvider) {
+                $routeProvider.
+                when('/', {
+                    templateUrl: '/resources/static/templates/get_usn.html',
+                    controller: 'USNController'
+                }).
+                when('/events',{
+                    templateUrl: '/resources/static/templates/show_events.html',
+                    controller: 'EventsController'
+                }).
+                when('/receipt',{
+                    templateUrl: '/resources/static/templates/show_receipt.html',
+                    controller: 'ReceiptController'
+                }).
+                otherwise({
+                    redirectTo: '/'
+                });
 }]);

@@ -1,9 +1,4 @@
 <style>
-    @font-face {
-        font-family: "Essay";
-        src: url("/resources/static/fonts/Essays1743-Bold.woff") format('woff');
-    }
-
     .receipt-title{
         font-family: "Essay";
         font-size: 30px;
@@ -23,7 +18,7 @@
 
     .receipt-details{
         padding: 20px 20px 20px 20px;
-         width: 30%;
+         width: 50%;
         float: right;
         text-align: right;
     }
@@ -47,6 +42,19 @@
         border-top: thin dashed black;
         border-bottom: thin dashed black;
     }
+
+    p{
+         font-size: 11px;
+        font-family: "Essay"
+    }
+
+    p.volunteer-signature{
+        font-size: 10px;
+    }
+
+    p.printed-at{
+         font-size:  8px;
+    }
 </style>
 
 <div data-ng-repeat="event in events | orderBy: 'name'" class="receipt">
@@ -54,12 +62,21 @@
    <div class="logo-wrapper-wrapper">
          <div class="logo-wrapper">
             <img src="/resources/static/img/revamp-logo.png" alt="">
-            <div class="receipt-title">Revamp 2015</div>
+            <div class="receipt-title"><strong>Revamp 2015</strong></div>
         </div>
     </div>
     <div class="receipt-details-wrapper">
         <div class="receipt-details">
-            {{event}}
+            <p>Thanks for participating in <strong>{{event.event | uppercase}}</strong> have a great time! All the very Best!</p>
+            <p><strong>Date:</strong>  {{event.date}}</p>
+            <p>Fee: {{event.fee}}</p>
+            <p>Venue: {{event.venue}}</p>
+            <p><strong><em>(Please carry this receipt to the venue)</em></strong></p>
+            <br>
+            <br>
+            <br>
+            <p class="volunteer-signature"><strong>Volunteer Signature</strong></p>
+            <p class="printed-at">{{Date.now() | date:'dd.MM.yyyy HH:mm:ss'}}</p>
         </div>
     </div>
 </div>
