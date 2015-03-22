@@ -1,0 +1,27 @@
+@media screen{
+    html, body, #view-container{
+        width: 99%;
+        height: 99%;
+    }
+    body{
+        background-color: #D4E157;
+    }
+    .btn, .input-group-addon{
+        background-color: #E6EE9C;
+    }
+}
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+    html, body {
+        width: 210mm;
+        height: 297mm;
+    }
+
+    .receipt{
+        height: 98mm;
+    }
+}

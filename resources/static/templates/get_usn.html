@@ -1,0 +1,63 @@
+<div id="root" data-ng-switch on="loading">
+    <style>
+        #root{
+            height: 100%;
+            width: 100%;
+        }
+
+        #form-container{
+            width: 100%;
+            height: 100%;
+        }
+        #inner-form-container{
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-top: 20%;
+            width: 40%;
+            align-content: center;
+        }
+        .outer {
+            display: table;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
+        .middle {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .inner {
+            margin-left: auto;
+            margin-right: auto;
+            width: /*whatever width you want*/;
+        }
+        .input-group{
+            margin-bottom: 20px;
+        }
+    </style>
+    <div id="form-container" data-ng-switch-when="false">
+        <div class="outer">
+            <div class="middle">
+                <div class="inner">
+                    <div  id="inner-form-container">
+                        <div class="input-group">
+                            <span class="input-group-addon">#</span>
+                            <input placeholder="Mobile Number" data-ng-model="data.usn" id="usn-input" type="text" class="form-control" aria-label="Phonenumber">
+                        </div>
+                        <center>
+                            <button id="submit-button" type="button" class="btn btn-default" data-ng-click="getEvents()">Submit</button>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-ng-switch-when="true">
+        <center>
+            <loading></loading>
+        </center>
+    </div>
+</div>

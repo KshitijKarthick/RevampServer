@@ -1,0 +1,65 @@
+<style>
+    @font-face {
+        font-family: "Essay";
+        src: url("/resources/static/fonts/Essays1743-Bold.woff") format('woff');
+    }
+
+    .receipt-title{
+        font-family: "Essay";
+        font-size: 30px;
+    }
+
+    .logo-wrapper-wrapper{
+        flex: 1;
+    }
+
+    .logo-wrapper{
+        text-align: center;
+    }
+
+    .receipt-details-wrapper{
+        flex: 2;
+    }
+
+    .receipt-details{
+        padding: 20px 20px 20px 20px;
+         width: 30%;
+        float: right;
+        text-align: right;
+    }
+
+    .receipt:nth-child(3n+1){
+        page-break-after: always;
+    }
+
+    .receipt{
+        display: flex;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .logo {
+        position: relative;
+        top: 50%;
+        height: 10%;
+    }
+
+    .receipt:nth-child(2n+1){
+        border-top: thin dashed black;
+        border-bottom: thin dashed black;
+    }
+</style>
+
+<div data-ng-repeat="event in events | orderBy: 'name'" class="receipt">
+
+   <div class="logo-wrapper-wrapper">
+         <div class="logo-wrapper">
+            <img src="/resources/static/img/revamp-logo.png" alt="">
+            <div class="receipt-title">Revamp 2015</div>
+        </div>
+    </div>
+    <div class="receipt-details-wrapper">
+        <div class="receipt-details">
+            {{event}}
+        </div>
+    </div>
+</div>
